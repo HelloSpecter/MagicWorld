@@ -1,0 +1,333 @@
+
+2021-01-30 09:20:15,316 [1] [INFO ] [GameServer] ：Game Server Init
+2021-01-30 09:20:15,692 [1] [INFO ] [GameServer] ：DataManager -> DataManager()
+2021-01-30 09:20:15,703 [1] [INFO ] [GameServer] ：DataManager -> Load()
+2021-01-30 09:20:16,019 [1] [INFO ] [GameServer] ：New Map > ID:[1] Name:[奥特兰] 已加载!
+2021-01-30 09:20:16,021 [1] [INFO ] [GameServer] ：New Map > ID:[2] Name:[野外1] 已加载!
+2021-01-30 09:20:16,021 [1] [INFO ] [GameServer] ：New Map > ID:[3] Name:[野外2] 已加载!
+2021-01-30 09:20:16,022 [1] [INFO ] [GameServer] ：New Map > ID:[4] Name:[副本1] 已加载!
+2021-01-30 09:20:16,023 [1] [WARN ] [GameServer] ：Starting Listener...
+2021-01-30 09:20:16,092 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:20:16,092 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:20:16,093 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:20:16,093 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:20:16,093 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:20:16,093 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:20:16,092 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:20:16,093 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:20:16,189 [1] [WARN ] [GameServer] ：NetService Started
+2021-01-30 09:21:30,058 [3] [WARN ] [GameServer] ：Client[127.0.0.1:54031]] Connected
+2021-01-30 09:21:30,120 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-30 09:21:46,124 [5] [ERROR] [GameServer] ：Message handler exception:System.Data.SqlClient.SqlException (0x80131904): 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   在 System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20, 基础提供程序在 Open 上失败。, EntityFramework,    在 System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   在 System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   在 System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   在 System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   在 System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   在 System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   在 GameServer.Services.UserService.OnLogInRequest(NetConnection`1 sender, UserLoginRequest request) 位置 D:\Projects\ExtremeWorld\m_mmorpg\Src\Server\GameServer\GameServer\Services\UserService.cs:行号 154
+   在 Network.MessageDistributer`1.RaiseEvent[Tm](T sender, Tm msg) 位置 D:\Projects\ExtremeWorld\m_mmorpg\Src\Lib\Common\Network\MessageDistributer.cs:行号 105
+2021-01-30 09:22:01,169 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-30 09:30:04,932 [1] [INFO ] [GameServer] ：Game Server Init
+2021-01-30 09:30:05,281 [1] [INFO ] [GameServer] ：DataManager -> DataManager()
+2021-01-30 09:30:05,293 [1] [INFO ] [GameServer] ：DataManager -> Load()
+2021-01-30 09:30:05,699 [1] [INFO ] [GameServer] ：New Map > ID:[1] Name:[奥特兰] 已加载!
+2021-01-30 09:30:05,702 [1] [INFO ] [GameServer] ：New Map > ID:[2] Name:[野外1] 已加载!
+2021-01-30 09:30:05,703 [1] [INFO ] [GameServer] ：New Map > ID:[3] Name:[野外2] 已加载!
+2021-01-30 09:30:05,703 [1] [INFO ] [GameServer] ：New Map > ID:[4] Name:[副本1] 已加载!
+2021-01-30 09:30:05,704 [1] [WARN ] [GameServer] ：Starting Listener...
+2021-01-30 09:30:05,776 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:30:05,777 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:30:05,777 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:30:05,776 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:30:05,777 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:30:05,776 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:30:05,777 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:30:05,807 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 09:30:05,818 [1] [WARN ] [GameServer] ：NetService Started
+2021-01-30 09:30:49,563 [3] [WARN ] [GameServer] ：Client[127.0.0.1:49714]] Connected
+2021-01-30 09:30:49,631 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-30 09:30:52,939 [5] [INFO ] [GameServer] ：Success
+2021-01-30 09:30:52,940 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-30 09:31:01,044 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 09:31:01,049 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:3,Name:awdf,Map:1
+2021-01-30 09:31:01,058 [6] [INFO ] [GameServer] ：EntityID:[1],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 09:31:01,061 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-01-30 09:31:01,062 [6] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-30 09:31:30,434 [3] [WARN ] [GameServer] ：Client[127.0.0.1:49724]] Connected
+2021-01-30 09:31:30,494 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-30 09:31:30,535 [5] [INFO ] [GameServer] ：Success
+2021-01-30 09:31:30,540 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-30 09:31:35,661 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 09:31:35,662 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:9,Name:123,Map:1
+2021-01-30 09:31:35,663 [5] [INFO ] [GameServer] ：EntityID:[2],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 09:31:35,665 [5] [INFO ] [GameServer] ：123 Message of Enter Map: [1] has already sent to test1
+2021-01-30 09:31:35,665 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-30 09:31:35,665 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-30 09:31:46,613 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 09:31:46,615 [5] [INFO ] [GameServer] ：key of CharManager:[2] has Deleted!
+2021-01-30 09:31:46,618 [5] [INFO ] [GameServer] ：Send 123 Leave to test1
+2021-01-30 09:31:46,620 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of 123has sent!
+2021-01-30 09:31:46,620 [5] [INFO ] [GameServer] ：Send 123 Leave to test2
+2021-01-30 09:31:46,621 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of 123has sent!
+2021-01-30 09:31:46,621 [5] [INFO ] [GameServer] ：MapChars中删除:123
+2021-01-30 09:31:52,231 [15] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 09:31:52,231 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:9,Name:123,Map:1
+2021-01-30 09:31:52,232 [5] [INFO ] [GameServer] ：EntityID:[3],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 09:31:52,232 [5] [INFO ] [GameServer] ：123 Message of Enter Map: [1] has already sent to test1
+2021-01-30 09:31:52,233 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-30 09:31:52,233 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-30 09:31:55,522 [15] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 09:31:55,522 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:8,Name:asdf,Map:1
+2021-01-30 09:31:55,523 [6] [INFO ] [GameServer] ：EntityID:[4],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 09:31:55,523 [6] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test1
+2021-01-30 09:31:55,523 [6] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test2
+2021-01-30 09:31:55,524 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is3
+2021-01-30 09:31:55,524 [6] [ERROR] [GameServer] ：当前MapChars Num is3
+2021-01-30 09:31:58,024 [15] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-30 09:32:00,751 [15] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-30 09:33:13,384 [1] [INFO ] [GameServer] ：Game Server Exiting...
+2021-01-30 09:33:13,504 [1] [WARN ] [GameServer] ：Stop NetService...
+2021-01-30 09:33:13,504 [1] [WARN ] [GameServer] ：Stoping Message Handler...
+2021-01-30 09:33:13,504 [12] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 09:33:13,504 [7] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 09:33:13,504 [10] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 09:33:13,504 [11] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 09:33:13,504 [6] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 09:33:13,504 [9] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 09:33:13,504 [5] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 09:33:13,504 [8] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 09:33:13,624 [1] [INFO ] [GameServer] ：Game Server Exited
+2021-01-30 14:10:44,004 [1] [INFO ] [GameServer] ：Game Server Init
+2021-01-30 14:10:44,374 [1] [INFO ] [GameServer] ：DataManager -> DataManager()
+2021-01-30 14:10:44,387 [1] [INFO ] [GameServer] ：DataManager -> Load()
+2021-01-30 14:10:44,727 [1] [INFO ] [GameServer] ：New Map > ID:[1] Name:[奥特兰] 已加载!
+2021-01-30 14:10:44,730 [1] [INFO ] [GameServer] ：New Map > ID:[2] Name:[野外1] 已加载!
+2021-01-30 14:10:44,731 [1] [INFO ] [GameServer] ：New Map > ID:[3] Name:[野外2] 已加载!
+2021-01-30 14:10:44,731 [1] [INFO ] [GameServer] ：New Map > ID:[4] Name:[副本1] 已加载!
+2021-01-30 14:10:44,732 [1] [WARN ] [GameServer] ：Starting Listener...
+2021-01-30 14:10:44,808 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 14:10:44,808 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 14:10:44,808 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 14:10:44,808 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 14:10:44,808 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 14:10:44,808 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 14:10:44,808 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 14:10:44,808 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-30 14:10:44,856 [1] [WARN ] [GameServer] ：NetService Started
+2021-01-30 14:12:06,407 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53680]] Connected
+2021-01-30 14:12:06,468 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-30 14:12:09,741 [5] [INFO ] [GameServer] ：Success
+2021-01-30 14:12:09,742 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-30 14:12:19,413 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:12:19,417 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:5,Name:zs,Map:1
+2021-01-30 14:12:19,424 [6] [INFO ] [GameServer] ：EntityID:[1],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:12:19,427 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-01-30 14:12:19,428 [6] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-30 14:12:51,866 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 14:12:51,869 [5] [INFO ] [GameServer] ：key of CharManager:[1] has Deleted!
+2021-01-30 14:12:51,872 [5] [INFO ] [GameServer] ：Send zs Leave to test1
+2021-01-30 14:12:51,873 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of zshas sent!
+2021-01-30 14:12:51,873 [5] [INFO ] [GameServer] ：MapChars中删除:zs
+2021-01-30 14:12:56,542 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:12:56,543 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:7,Name:sdfgh,Map:1
+2021-01-30 14:12:56,544 [5] [INFO ] [GameServer] ：EntityID:[2],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:12:56,544 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-01-30 14:12:56,545 [5] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-30 14:13:18,719 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-30 14:35:50,875 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53755]] Connected
+2021-01-30 14:35:50,952 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-30 14:35:51,003 [5] [INFO ] [GameServer] ：Success
+2021-01-30 14:35:51,004 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-30 14:35:53,837 [53] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:35:53,838 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:4,Name:asd,Map:1
+2021-01-30 14:35:53,839 [5] [INFO ] [GameServer] ：EntityID:[3],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:35:53,840 [5] [INFO ] [GameServer] ：asd Message of Enter Map: [1] has already sent to test1
+2021-01-30 14:35:53,840 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-30 14:35:53,840 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-30 14:35:58,771 [53] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 14:35:58,772 [6] [INFO ] [GameServer] ：key of CharManager:[3] has Deleted!
+2021-01-30 14:35:58,772 [6] [INFO ] [GameServer] ：Send asd Leave to test1
+2021-01-30 14:35:58,773 [6] [INFO ] [GameServer] ：MapCharacterLeaveResponse of asdhas sent!
+2021-01-30 14:35:58,773 [6] [INFO ] [GameServer] ：Send asd Leave to test1
+2021-01-30 14:35:58,773 [6] [INFO ] [GameServer] ：MapCharacterLeaveResponse of asdhas sent!
+2021-01-30 14:35:58,774 [6] [INFO ] [GameServer] ：MapChars中删除:asd
+2021-01-30 14:36:01,816 [53] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:36:01,817 [7] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:6,Name:zszszs,Map:1
+2021-01-30 14:36:01,817 [7] [INFO ] [GameServer] ：EntityID:[4],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:36:01,818 [7] [INFO ] [GameServer] ：zszszs Message of Enter Map: [1] has already sent to test1
+2021-01-30 14:36:01,818 [7] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-30 14:36:01,818 [7] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-30 14:36:19,137 [53] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 14:36:19,137 [5] [INFO ] [GameServer] ：key of CharManager:[4] has Deleted!
+2021-01-30 14:36:19,139 [5] [INFO ] [GameServer] ：Send zszszs Leave to test1
+2021-01-30 14:36:19,139 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of zszszshas sent!
+2021-01-30 14:36:19,140 [5] [INFO ] [GameServer] ：Send zszszs Leave to test1
+2021-01-30 14:36:19,140 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of zszszshas sent!
+2021-01-30 14:36:19,141 [5] [INFO ] [GameServer] ：MapChars中删除:zszszs
+2021-01-30 14:36:21,787 [55] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:36:21,787 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:7,Name:sdfgh,Map:1
+2021-01-30 14:36:21,788 [5] [INFO ] [GameServer] ：EntityID:[5],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:36:21,789 [5] [INFO ] [GameServer] ：sdfgh Message of Enter Map: [1] has already sent to test1
+2021-01-30 14:36:21,789 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-30 14:36:21,789 [5] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-30 14:36:35,294 [55] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 14:36:35,295 [5] [INFO ] [GameServer] ：key of CharManager:[5] has Deleted!
+2021-01-30 14:36:35,295 [5] [INFO ] [GameServer] ：Send sdfgh Leave to test1
+2021-01-30 14:36:35,296 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of sdfghhas sent!
+2021-01-30 14:36:35,298 [5] [INFO ] [GameServer] ：MapChars中删除:sdfgh
+2021-01-30 14:36:37,644 [56] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:36:37,645 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:3,Name:awdf,Map:1
+2021-01-30 14:36:37,645 [5] [INFO ] [GameServer] ：EntityID:[6],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:36:37,646 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-01-30 14:36:37,646 [5] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-30 14:36:45,300 [56] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 14:36:45,300 [6] [INFO ] [GameServer] ：key of CharManager:[6] has Deleted!
+2021-01-30 14:36:45,301 [6] [INFO ] [GameServer] ：Send awdf Leave to test1
+2021-01-30 14:36:45,301 [6] [INFO ] [GameServer] ：MapCharacterLeaveResponse of awdfhas sent!
+2021-01-30 14:36:45,301 [6] [INFO ] [GameServer] ：MapChars中删除:awdf
+2021-01-30 14:36:48,999 [55] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-30 14:37:04,019 [55] [WARN ] [GameServer] ：Client[127.0.0.1:53756]] Connected
+2021-01-30 14:37:04,117 [55] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-30 14:37:04,155 [5] [INFO ] [GameServer] ：Success
+2021-01-30 14:37:04,155 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-30 14:37:06,594 [59] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:37:06,595 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:10,Name:1234,Map:1
+2021-01-30 14:37:06,596 [5] [INFO ] [GameServer] ：EntityID:[7],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:37:06,596 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-01-30 14:37:06,596 [5] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-30 14:37:13,890 [59] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 14:37:13,891 [5] [INFO ] [GameServer] ：key of CharManager:[7] has Deleted!
+2021-01-30 14:37:13,892 [5] [INFO ] [GameServer] ：Send 1234 Leave to test3
+2021-01-30 14:37:13,892 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of 1234has sent!
+2021-01-30 14:37:13,893 [5] [INFO ] [GameServer] ：MapChars中删除:1234
+2021-01-30 14:37:15,682 [59] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:37:15,683 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:10,Name:1234,Map:1
+2021-01-30 14:37:15,684 [6] [INFO ] [GameServer] ：EntityID:[8],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:37:15,685 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-01-30 14:37:15,686 [6] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-30 14:37:45,835 [59] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-30 14:39:36,987 [59] [WARN ] [GameServer] ：Client[127.0.0.1:53758]] Connected
+2021-01-30 14:39:37,057 [59] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-30 14:39:37,095 [5] [INFO ] [GameServer] ：Success
+2021-01-30 14:39:37,101 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-30 14:39:40,145 [59] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:39:40,146 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:9,Name:123,Map:1
+2021-01-30 14:39:40,147 [5] [INFO ] [GameServer] ：EntityID:[9],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:39:40,148 [5] [INFO ] [GameServer] ：123 Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:39:40,148 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-30 14:39:40,149 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-30 14:40:10,814 [59] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 14:40:10,815 [5] [INFO ] [GameServer] ：key of CharManager:[9] has Deleted!
+2021-01-30 14:40:10,816 [5] [INFO ] [GameServer] ：Send 123 Leave to test3
+2021-01-30 14:40:10,816 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of 123has sent!
+2021-01-30 14:40:10,817 [5] [INFO ] [GameServer] ：Send 123 Leave to test2
+2021-01-30 14:40:10,818 [5] [INFO ] [GameServer] ：MapCharacterLeaveResponse of 123has sent!
+2021-01-30 14:40:10,818 [5] [INFO ] [GameServer] ：MapChars中删除:123
+2021-01-30 14:40:12,876 [66] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:40:12,877 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:8,Name:asdf,Map:1
+2021-01-30 14:40:12,878 [5] [INFO ] [GameServer] ：EntityID:[10],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:40:12,878 [5] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:40:12,879 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-30 14:40:12,880 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-30 14:40:32,329 [66] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-30 14:46:53,313 [68] [WARN ] [GameServer] ：Client[127.0.0.1:53760]] Connected
+2021-01-30 14:46:53,378 [68] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-30 14:46:53,426 [5] [INFO ] [GameServer] ：Success
+2021-01-30 14:46:53,432 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-30 14:46:56,815 [80] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:46:56,816 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:13,Name:1w,Map:1
+2021-01-30 14:46:56,817 [5] [INFO ] [GameServer] ：EntityID:[11],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:46:56,818 [5] [INFO ] [GameServer] ：1w Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:46:56,819 [5] [INFO ] [GameServer] ：1w Message of Enter Map: [1] has already sent to test2
+2021-01-30 14:46:56,819 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is3
+2021-01-30 14:46:56,820 [5] [ERROR] [GameServer] ：当前MapChars Num is3
+2021-01-30 14:47:02,356 [80] [WARN ] [GameServer] ：Client[] DataReceived Len:8
+2021-01-30 14:47:02,357 [6] [INFO ] [GameServer] ：key of CharManager:[11] has Deleted!
+2021-01-30 14:47:02,358 [6] [INFO ] [GameServer] ：Send 1w Leave to test3
+2021-01-30 14:47:02,358 [6] [INFO ] [GameServer] ：MapCharacterLeaveResponse of 1whas sent!
+2021-01-30 14:47:02,359 [6] [INFO ] [GameServer] ：Send 1w Leave to test2
+2021-01-30 14:47:02,359 [6] [INFO ] [GameServer] ：MapCharacterLeaveResponse of 1whas sent!
+2021-01-30 14:47:02,360 [6] [INFO ] [GameServer] ：Send 1w Leave to test4
+2021-01-30 14:47:02,361 [6] [INFO ] [GameServer] ：MapCharacterLeaveResponse of 1whas sent!
+2021-01-30 14:47:02,361 [6] [INFO ] [GameServer] ：MapChars中删除:1w
+2021-01-30 14:47:12,952 [80] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:47:12,953 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:16,Name:fs,Map:1
+2021-01-30 14:47:12,954 [5] [INFO ] [GameServer] ：EntityID:[12],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:47:12,955 [5] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:47:12,955 [5] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test2
+2021-01-30 14:47:12,956 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is3
+2021-01-30 14:47:12,957 [5] [ERROR] [GameServer] ：当前MapChars Num is3
+2021-01-30 14:48:44,188 [80] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:48:44,189 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:16,Name:fs,Map:1
+2021-01-30 14:48:44,190 [5] [INFO ] [GameServer] ：EntityID:[13],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:48:44,190 [5] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:48:44,191 [5] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test2
+2021-01-30 14:48:44,191 [5] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test4
+2021-01-30 14:48:44,192 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is4
+2021-01-30 14:48:44,192 [5] [ERROR] [GameServer] ：当前MapChars Num is3
+2021-01-30 14:48:45,156 [80] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:48:45,156 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:16,Name:fs,Map:1
+2021-01-30 14:48:45,157 [6] [INFO ] [GameServer] ：EntityID:[14],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:48:45,158 [6] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:48:45,158 [6] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test2
+2021-01-30 14:48:45,159 [6] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test4
+2021-01-30 14:48:45,159 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is4
+2021-01-30 14:48:45,160 [6] [ERROR] [GameServer] ：当前MapChars Num is3
+2021-01-30 14:48:46,249 [84] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:48:46,250 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:16,Name:fs,Map:1
+2021-01-30 14:48:46,251 [5] [INFO ] [GameServer] ：EntityID:[15],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:48:46,252 [5] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:48:46,253 [5] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test2
+2021-01-30 14:48:46,254 [5] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test4
+2021-01-30 14:48:46,254 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is4
+2021-01-30 14:48:46,255 [5] [ERROR] [GameServer] ：当前MapChars Num is3
+2021-01-30 14:48:47,311 [84] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:48:47,312 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:16,Name:fs,Map:1
+2021-01-30 14:48:47,313 [6] [INFO ] [GameServer] ：EntityID:[16],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:48:47,313 [6] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:48:47,314 [6] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test2
+2021-01-30 14:48:47,315 [6] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test4
+2021-01-30 14:48:47,315 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is4
+2021-01-30 14:48:47,316 [6] [ERROR] [GameServer] ：当前MapChars Num is3
+2021-01-30 14:48:48,247 [84] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-30 14:48:48,248 [7] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:16,Name:fs,Map:1
+2021-01-30 14:48:48,249 [7] [INFO ] [GameServer] ：EntityID:[17],At(5000, 4000, 820),已被添加至Map[1]目录
+2021-01-30 14:48:48,250 [7] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test3
+2021-01-30 14:48:48,251 [7] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test2
+2021-01-30 14:48:48,252 [7] [INFO ] [GameServer] ：fs Message of Enter Map: [1] has already sent to test4
+2021-01-30 14:48:48,253 [7] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is4
+2021-01-30 14:48:48,254 [7] [ERROR] [GameServer] ：当前MapChars Num is3
+2021-01-30 15:06:29,088 [1] [INFO ] [GameServer] ：Game Server Exiting...
+2021-01-30 15:06:29,192 [1] [WARN ] [GameServer] ：Stop NetService...
+2021-01-30 15:06:29,193 [1] [WARN ] [GameServer] ：Stoping Message Handler...
+2021-01-30 15:06:29,194 [5] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 15:06:29,195 [8] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 15:06:29,195 [12] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 15:06:29,195 [11] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 15:06:29,194 [6] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 15:06:29,195 [10] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 15:06:29,195 [9] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 15:06:29,194 [7] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-30 15:06:29,311 [1] [INFO ] [GameServer] ：Game Server Exited

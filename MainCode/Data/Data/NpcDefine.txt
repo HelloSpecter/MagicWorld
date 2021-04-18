@@ -1,0 +1,32 @@
+{
+  "1": {
+    "ID": 1,
+    "Name": " 任务助手",
+    "Description": "开启任务",
+    "Type": "Task",
+    "Function": "InvokeInstance"
+  },
+  "2": {
+    "ID": 2,
+    "Name": "副本助手",
+    "Description": "开启副本",
+    "Type": "Task",
+    "Function": "InvokeInstance"
+  },
+  "3": {
+    "ID": 3,
+    "Name": "杂货商",
+    "Description": "购买出售",
+    "Type": "Functional",
+    "Function": "InvokeShop",
+    "Param": 1
+  },
+  "4": {
+    "ID": 4,
+    "Name": "武器商",
+    "Description": "购买出售",
+    "Type": "Functional",
+    "Function": "InvokeShop",
+    "Param": 2
+  }
+}

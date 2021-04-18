@@ -1,0 +1,269 @@
+2021-04-18 15:52:21,375 [ 1] INFO  Unity: LoadingManager start
+2021-04-18 15:52:22,614 [ 1] INFO  Unity: DataManager -> DataManager()
+2021-04-18 15:52:22,618 [ 1] INFO  Unity: DataManager ->IEnumerator Load()
+2021-04-18 15:52:46,112 [ 1] INFO  Unity: UserLoginRequest::user :test1 psw:123
+2021-04-18 15:52:46,113 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-04-18 15:52:46,115 [ 1] INFO  Unity: DoConnect
+2021-04-18 15:52:46,118 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-04-18 15:52:46,121 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2021-04-18 15:52:46,128 [ 1] ERROR Unity: 登录信息已发送！
+UnityEngine.Debug:LogError(Object)
+UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:32)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2021-04-18 15:52:56,333 [ 1] INFO  Unity: UserLoginRequest::user :test1 psw:123
+2021-04-18 15:52:56,334 [ 1] ERROR Unity: 登录信息已发送！
+UnityEngine.Debug:LogError(Object)
+UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:32)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2021-04-18 15:53:11,713 [ 1] INFO  Unity: UserRegisterRequest::user :test1 psw:123
+2021-04-18 15:53:11,714 [ 1] ERROR Unity: 注册信息已发送！
+UnityEngine.Debug:LogError(Object)
+UIRegister:OnClickEnter() (at Assets/Scripts/UI/UIRegister.cs:96)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2021-04-18 15:53:15,973 [ 1] INFO  Unity: UserLoginRequest::user :test1 psw:123
+2021-04-18 15:53:15,974 [ 1] ERROR Unity: 登录信息已发送！
+UnityEngine.Debug:LogError(Object)
+UIRegister:OnClickEnter() (at Assets/Scripts/UI/UIRegister.cs:103)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2021-04-18 15:53:16,075 [ 1] INFO  Unity: SetupUserInfo()->User.userInfo
+2021-04-18 15:53:16,079 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-04-18 15:53:16,528 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-04-18 15:53:26,178 [ 1] INFO  Unity: UserCharCreateRequest::Name :fs1 Class:Wizard
+2021-04-18 15:53:26,873 [ 1] INFO  Unity: 角色创建成功
+2021-04-18 15:53:26,880 [ 1] ERROR Unity: Character Selected:Name:fs1,Lv:1,Class:Wizard
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+UICharacterSelect:OnSelectCharacter(Int32, GameObject) (at Assets/Scripts/UI/UICharacterSelect.cs:174)
+UICharacterSelect:InitCharacterSelect(Boolean) (at Assets/Scripts/UI/UICharacterSelect.cs:62)
+UICharacterSelect:OnCharCreate(Result, String) (at Assets/Scripts/UI/UICharacterSelect.cs:237)
+Services.UserService:OnUserCharCreate(Object, UserCreateCharacterResponse) (at Assets/Scripts/Services/UserService.cs:287)
+Network.MessageDistributer`1:RaiseEvent(Object, UserCreateCharacterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:13)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-04-18 15:53:28,162 [ 1] INFO  Unity: CharPlay::ID :2 Name:fs1  Claa:Wizard
+2021-04-18 15:53:28,219 [ 1] INFO  Unity: 正在进入游戏
+2021-04-18 15:53:28,223 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2021-04-18 15:53:28,224 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2021-04-18 15:53:28,226 [ 1] INFO  Unity: ItemManager:Init[Id:2001,Count:2]
+2021-04-18 15:53:28,246 [ 1] ERROR Unity: Respon.Char Num is:1
+UnityEngine.Debug:LogError(Object)
+Services.MapService:OnMapCharEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:44)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:16)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-04-18 15:53:28,248 [ 1] ERROR Unity: 角色正在加入...
+UnityEngine.Debug:LogError(Object)
+Services.MapService:OnMapCharEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:52)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:16)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-04-18 15:53:28,255 [ 1] INFO  Unity: Add new Char to CharManager-Chars
+2021-04-18 15:53:28,256 [ 1] INFO  Unity: OnCharEnter is False
+2021-04-18 15:53:28,258 [ 1] ERROR Unity: CharacterManager Chars Num is1
+UnityEngine.Debug:LogError(Object)
+Managers.CharacterManager:AddChar(NCharacterInfo) (at Assets/Scripts/Managers/CharacterManager.cs:55)
+Services.MapService:OnMapCharEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:53)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:16)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-04-18 15:53:28,260 [ 1] INFO  Unity: 正在切换地图...
+2021-04-18 15:53:28,262 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-04-18 15:53:29,222 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2021-04-18 15:53:29,223 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2021-04-18 15:53:29,374 [ 1] WARN  Unity: UIWorldElementManager:[-12368] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-04-18 15:53:29,375 [ 1] WARN  Unity: MainPlayerCamera:[-8882] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-04-18 15:53:29,376 [ 1] WARN  Unity: Managers.GameObjectManager:[-8082] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-04-18 15:53:29,377 [ 1] ERROR Unity: IEnumerator InitGameObjects() Start!
+UnityEngine.Debug:LogError(Object)
+Managers.<InitGameObjects>c__Iterator0:MoveNext() (at Assets/Scripts/Managers/GameObjectManager.cs:39)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+Managers.GameObjectManager:OnStart() (at Assets/Scripts/Managers/GameObjectManager.cs:23)
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:34)
+
+2021-04-18 15:53:29,379 [ 1] INFO  Unity: 成功读取模型地址：Tid:[2]--Character/Wizard
+2021-04-18 15:53:29,384 [ 1] INFO  Unity: 新对象已创建：fs1
+2021-04-18 15:53:29,386 [ 1] INFO  Unity: EntityController 初始化完毕
+2021-04-18 15:53:29,386 [ 1] INFO  Unity: Camera Ready!
+2021-04-18 15:53:29,388 [ 1] INFO  Unity: PlayerInputController 初始化完毕
+2021-04-18 15:53:29,388 [ 1] ERROR Unity: CharacterManager.Instance.OnCharEnter 已注册 
+UnityEngine.Debug:LogError(Object)
+Managers.GameObjectManager:OnStart() (at Assets/Scripts/Managers/GameObjectManager.cs:26)
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:34)
+
+2021-04-18 15:53:29,389 [ 1] WARN  Unity: SpriteManager:[19216] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-04-18 15:53:29,390 [ 1] WARN  Unity: UIMain:[20524] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-04-18 15:53:29,433 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-04-18 15:53:29,440 [ 1] WARN  Unity: UIMinimap Start-10018
+UnityEngine.Debug:LogWarning(Object)
+UIMiniMap:Start() (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:23)
+
+2021-04-18 15:53:29,441 [ 1] ERROR Unity: 已获取地图[1]布林镇
+UnityEngine.Debug:LogError(Object)
+Managers.MinimapManager:LoadMiniMap() (at Assets/Scripts/Managers/MinimapManager.cs:49)
+UIMiniMap:UpdateMap() (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:34)
+UIMiniMap:Start() (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:25)
+
+2021-04-18 15:53:30,854 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:30,857 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:31,048 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2021-04-18 15:53:31,050 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:31,153 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
+2021-04-18 15:53:31,154 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:31,235 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
+2021-04-18 15:53:31,236 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:31,339 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
+2021-04-18 15:53:31,341 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:31,438 [ 1] INFO  Unity: SetDirection:(58, 81, 0)
+2021-04-18 15:53:31,439 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:31,524 [ 1] INFO  Unity: SetDirection:(43, 90, 0)
+2021-04-18 15:53:31,525 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:31,707 [ 1] INFO  Unity: SetDirection:(27, 96, 0)
+2021-04-18 15:53:31,707 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:32,187 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:32,189 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:32,635 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:32,636 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:33,298 [ 1] INFO  Unity: SetDirection:(9, 100, 0)
+2021-04-18 15:53:33,298 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:33,762 [ 1] INFO  Unity: SetPosition:(5312, 4591, 805)
+2021-04-18 15:53:33,763 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:34,159 [ 1] INFO  Unity: SetDirection:(-9, 100, 0)
+2021-04-18 15:53:34,160 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:34,325 [ 1] INFO  Unity: SetDirection:(-28, 96, 0)
+2021-04-18 15:53:34,326 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:35,650 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:35,652 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:35,868 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:35,869 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:35,902 [ 1] INFO  Unity: SetDirection:(-45, 89, 0)
+2021-04-18 15:53:35,903 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:36,033 [ 1] INFO  Unity: SetDirection:(-61, 79, 0)
+2021-04-18 15:53:36,034 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:36,133 [ 1] INFO  Unity: SetDirection:(-76, 65, 0)
+2021-04-18 15:53:36,134 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:36,232 [ 1] INFO  Unity: SetDirection:(-86, 51, 0)
+2021-04-18 15:53:36,233 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:37,096 [ 1] INFO  Unity: SetPosition:(4924, 5360, 805)
+2021-04-18 15:53:37,097 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:37,261 [ 1] INFO  Unity: SetDirection:(-74, 67, 0)
+2021-04-18 15:53:37,263 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:37,360 [ 1] INFO  Unity: SetDirection:(-59, 81, 0)
+2021-04-18 15:53:37,362 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:37,476 [ 1] INFO  Unity: SetDirection:(-42, 91, 0)
+2021-04-18 15:53:37,477 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:37,724 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:37,725 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:38,075 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:38,076 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:38,393 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:38,394 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:38,923 [ 1] INFO  Unity: MoveBack
+2021-04-18 15:53:38,924 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:-300
+2021-04-18 15:53:39,287 [ 1] INFO  Unity: SetDirection:(-58, 81, 0)
+2021-04-18 15:53:39,288 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:-300
+2021-04-18 15:53:39,421 [ 1] INFO  Unity: SetDirection:(-72, 69, 0)
+2021-04-18 15:53:39,422 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:-300
+2021-04-18 15:53:39,722 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:39,723 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:39,904 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:39,905 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:40,484 [ 1] INFO  Unity: SetDirection:(-84, 54, 0)
+2021-04-18 15:53:40,485 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:41,115 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:41,116 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:41,381 [ 1] INFO  Unity: SetDirection:(-73, 68, 0)
+2021-04-18 15:53:41,383 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:41,479 [ 1] INFO  Unity: SetDirection:(-58, 81, 0)
+2021-04-18 15:53:41,481 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:41,580 [ 1] INFO  Unity: SetDirection:(-40, 92, 0)
+2021-04-18 15:53:41,582 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:41,680 [ 1] INFO  Unity: SetDirection:(-20, 98, 0)
+2021-04-18 15:53:41,681 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:41,779 [ 1] INFO  Unity: SetDirection:(0, 100, 0)
+2021-04-18 15:53:41,780 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:41,862 [ 1] INFO  Unity: SetDirection:(18, 98, 0)
+2021-04-18 15:53:41,862 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:41,961 [ 1] INFO  Unity: SetDirection:(38, 93, 0)
+2021-04-18 15:53:41,962 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:42,044 [ 1] INFO  Unity: SetDirection:(53, 85, 0)
+2021-04-18 15:53:42,045 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:42,127 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:42,128 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:42,143 [ 1] INFO  Unity: SetDirection:(67, 74, 0)
+2021-04-18 15:53:42,144 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:42,226 [ 1] INFO  Unity: SetDirection:(79, 61, 0)
+2021-04-18 15:53:42,227 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:42,326 [ 1] INFO  Unity: SetDirection:(90, 44, 0)
+2021-04-18 15:53:42,327 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:42,441 [ 1] INFO  Unity: SetDirection:(96, 26, 0)
+2021-04-18 15:53:42,442 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:42,837 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:42,838 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:43,748 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:43,749 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:44,066 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:44,067 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:44,877 [ 1] INFO  Unity: SetDirection:(90, 43, 0)
+2021-04-18 15:53:44,879 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:44,994 [ 1] INFO  Unity: SetDirection:(80, 60, 0)
+2021-04-18 15:53:44,995 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:45,126 [ 1] INFO  Unity: SetDirection:(68, 73, 0)
+2021-04-18 15:53:45,127 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:45,873 [ 1] INFO  Unity: MoveBack
+2021-04-18 15:53:45,874 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:-300
+2021-04-18 15:53:46,438 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:46,439 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:47,400 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:47,401 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:48,095 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:48,096 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:48,332 [ 1] INFO  Unity: MoveForward
+2021-04-18 15:53:48,333 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:48,381 [ 1] INFO  Unity: SetDirection:(54, 84, 0)
+2021-04-18 15:53:48,383 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-04-18 15:53:48,614 [ 1] INFO  Unity: Stop
+2021-04-18 15:53:48,615 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:9,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-04-18 15:53:48,965 [ 1] INFO  Unity: ---> DoFunctionInteractive(NpcDefine)
+2021-04-18 15:53:59,934 [ 1] INFO  Unity: SendBuyItem
+2021-04-18 15:54:00,039 [ 1] INFO  Unity: StatusNotify:[Item][Add]1004:1
+2021-04-18 15:54:00,041 [ 1] INFO  Unity: StatusNotify:[Money][Delete]0:500
+2021-04-18 15:58:23,492 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-04-18 15:58:23,493 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:182)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:177)
+
+2021-04-18 15:58:23,500 [ 1] INFO  Unity: Char_1_Wizard_fs1 isDestroy: entityID:9 POS:(4975, 5824, 805) DIR:(54, 84, 0) SPD:0

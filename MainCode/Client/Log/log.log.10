@@ -1,0 +1,382 @@
+2021-03-16 18:13:54,075 [ 1] INFO  Unity: LoadingManager start
+2021-03-16 18:13:55,332 [ 1] INFO  Unity: DataManager -> DataManager()
+2021-03-16 18:13:55,335 [ 1] INFO  Unity: DataManager ->IEnumerator Load()
+2021-03-16 18:14:26,666 [ 1] INFO  Unity: UserLoginRequest::user :test1 psw:123
+2021-03-16 18:14:26,667 [ 1] INFO  Unity: ConnectToServer() Start 
+2021-03-16 18:14:26,669 [ 1] INFO  Unity: DoConnect
+2021-03-16 18:14:26,671 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2021-03-16 18:14:26,673 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2021-03-16 18:14:26,679 [ 1] ERROR Unity: 登录信息已发送！
+UnityEngine.Debug:LogError(Object)
+UILogin:OnClickLogin() (at Assets/Scripts/UI/UILogin.cs:32)
+UnityEngine.EventSystems.EventSystem:Update()
+
+2021-03-16 18:14:26,874 [ 1] INFO  Unity: SetupUserInfo()->User.userInfo
+2021-03-16 18:14:26,880 [ 1] INFO  Unity: LoadLevel: CharSelect
+2021-03-16 18:14:27,166 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-03-16 18:14:27,176 [ 1] ERROR Unity: Character Selected:Name:fs1,Lv:0,Class:Wizard
+UnityEngine.Debug:LogErrorFormat(String, Object[])
+UICharacterSelect:OnSelectCharacter(Int32, GameObject) (at Assets/Scripts/UI/UICharacterSelect.cs:174)
+UICharacterSelect:InitCharacterSelect(Boolean) (at Assets/Scripts/UI/UICharacterSelect.cs:62)
+UICharacterSelect:Start() (at Assets/Scripts/UI/UICharacterSelect.cs:292)
+
+2021-03-16 18:14:28,329 [ 1] INFO  Unity: CharPlay::ID :1 Name:fs1  Claa:Wizard
+2021-03-16 18:14:28,426 [ 1] INFO  Unity: 正在进入游戏
+2021-03-16 18:14:28,430 [ 1] INFO  Unity: ItemManager:Init[Id:1,Count:20]
+2021-03-16 18:14:28,431 [ 1] INFO  Unity: ItemManager:Init[Id:2,Count:20]
+2021-03-16 18:14:28,433 [ 1] INFO  Unity: ItemManager:Init[Id:2001,Count:2]
+2021-03-16 18:14:28,434 [ 1] INFO  Unity: ItemManager:Init[Id:2003,Count:1]
+2021-03-16 18:14:28,445 [ 1] ERROR Unity: Respon.Char Num is:2
+UnityEngine.Debug:LogError(Object)
+Services.MapService:OnMapCharEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:44)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:16)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-03-16 18:14:28,447 [ 1] ERROR Unity: 角色正在加入...
+UnityEngine.Debug:LogError(Object)
+Services.MapService:OnMapCharEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:52)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:16)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-03-16 18:14:28,452 [ 1] INFO  Unity: Add new Char to CharManager-Chars
+2021-03-16 18:14:28,453 [ 1] INFO  Unity: OnCharEnter is False
+2021-03-16 18:14:28,455 [ 1] ERROR Unity: CharacterManager Chars Num is1
+UnityEngine.Debug:LogError(Object)
+Managers.CharacterManager:AddChar(NCharacterInfo) (at Assets/Scripts/Managers/CharacterManager.cs:55)
+Services.MapService:OnMapCharEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:53)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:16)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-03-16 18:14:28,456 [ 1] ERROR Unity: 角色正在加入...
+UnityEngine.Debug:LogError(Object)
+Services.MapService:OnMapCharEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:52)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:16)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-03-16 18:14:28,457 [ 1] INFO  Unity: Add new Char to CharManager-Chars
+2021-03-16 18:14:28,458 [ 1] INFO  Unity: OnCharEnter is False
+2021-03-16 18:14:28,459 [ 1] ERROR Unity: CharacterManager Chars Num is2
+UnityEngine.Debug:LogError(Object)
+Managers.CharacterManager:AddChar(NCharacterInfo) (at Assets/Scripts/Managers/CharacterManager.cs:55)
+Services.MapService:OnMapCharEnter(Object, MapCharacterEnterResponse) (at Assets/Scripts/Services/MapService.cs:53)
+Network.MessageDistributer`1:RaiseEvent(Object, MapCharacterEnterResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:105)
+Network.MessageDispatch`1:Dispatch(Object, NetMessageResponse) (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDispatch.cs:16)
+Network.MessageDistributer`1:Distribute() (at D:/Projects/ExtremeWorld/m_mmorpg/Src/Lib/Common/Network/MessageDistributer.cs:148)
+Network.NetClient:ProceeMessage() (at Assets/Scripts/Network/NetClient.cs:423)
+Network.NetClient:Update() (at Assets/Scripts/Network/NetClient.cs:441)
+
+2021-03-16 18:14:28,460 [ 1] INFO  Unity: 正在切换地图...
+2021-03-16 18:14:28,462 [ 1] INFO  Unity: LoadLevel: MainCity
+2021-03-16 18:14:28,464 [ 1] INFO  Unity: OnFriendList
+2021-03-16 18:14:29,184 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2021-03-16 18:14:29,196 [ 1] WARN  Unity: No mesh data available for mesh Sphere001 on particle system fx_portal. Make sure Read/Write Enabled is set in the importer to work on the particle system renderer
+
+2021-03-16 18:14:29,326 [ 1] WARN  Unity: UIWorldElementManager:[-237092] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-03-16 18:14:29,327 [ 1] WARN  Unity: UIMain:[-235244] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-03-16 18:14:29,329 [ 1] WARN  Unity: MainPlayerCamera:[-233994] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-03-16 18:14:29,330 [ 1] WARN  Unity: Managers.GameObjectManager:[-233196] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-03-16 18:14:29,332 [ 1] ERROR Unity: IEnumerator InitGameObjects() Start!
+UnityEngine.Debug:LogError(Object)
+Managers.<InitGameObjects>c__Iterator0:MoveNext() (at Assets/Scripts/Managers/GameObjectManager.cs:39)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+Managers.GameObjectManager:OnStart() (at Assets/Scripts/Managers/GameObjectManager.cs:23)
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:34)
+
+2021-03-16 18:14:29,335 [ 1] INFO  Unity: 成功读取模型地址：Tid:[1]--Character/Warrior
+2021-03-16 18:14:29,338 [ 1] INFO  Unity: 新对象已创建：zs1
+2021-03-16 18:14:29,339 [ 1] INFO  Unity: EntityController 初始化完毕
+2021-03-16 18:14:29,340 [ 1] ERROR Unity: CharacterManager.Instance.OnCharEnter 已注册 
+UnityEngine.Debug:LogError(Object)
+Managers.GameObjectManager:OnStart() (at Assets/Scripts/Managers/GameObjectManager.cs:26)
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:34)
+
+2021-03-16 18:14:29,341 [ 1] WARN  Unity: SpriteManager:[193476] Awake
+UnityEngine.Debug:LogWarningFormat(String, Object[])
+MonoSingleton`1:Awake() (at Assets/Scripts/Utilities/MonoSingleton.cs:23)
+
+2021-03-16 18:14:29,387 [ 1] INFO  Unity: LevelLoadCompleted:1
+2021-03-16 18:14:29,392 [ 1] WARN  Unity: UIMinimap Start-235238
+UnityEngine.Debug:LogWarning(Object)
+UIMiniMap:Start() (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:23)
+
+2021-03-16 18:14:29,393 [ 1] ERROR Unity: 已获取地图[1]布林镇
+UnityEngine.Debug:LogError(Object)
+Managers.MinimapManager:LoadMiniMap() (at Assets/Scripts/Managers/MinimapManager.cs:49)
+UIMiniMap:UpdateMap() (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:34)
+UIMiniMap:Start() (at Assets/Scripts/UI/MiniMap/UIMiniMap.cs:25)
+
+2021-03-16 18:14:29,466 [ 1] INFO  Unity: 成功读取模型地址：Tid:[2]--Character/Wizard
+2021-03-16 18:14:29,485 [ 1] INFO  Unity: 新对象已创建：fs1
+2021-03-16 18:14:29,486 [ 1] INFO  Unity: EntityController 初始化完毕
+2021-03-16 18:14:29,487 [ 1] INFO  Unity: Camera Ready!
+2021-03-16 18:14:29,487 [ 1] INFO  Unity: PlayerInputController 初始化完毕
+2021-03-16 18:14:30,333 [ 1] INFO  Unity: MoveForward
+2021-03-16 18:14:30,334 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-03-16 18:14:30,682 [ 1] INFO  Unity: SetDirection:(98, 18, 0)
+2021-03-16 18:14:30,683 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-03-16 18:14:30,781 [ 1] INFO  Unity: SetDirection:(94, 35, 0)
+2021-03-16 18:14:30,782 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:300
+2021-03-16 18:14:30,847 [ 1] INFO  Unity: Stop
+2021-03-16 18:14:30,848 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:30,864 [ 1] INFO  Unity: SetDirection:(86, 51, 0)
+2021-03-16 18:14:30,865 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:30,963 [ 1] INFO  Unity: SetDirection:(74, 68, 0)
+2021-03-16 18:14:30,964 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:31,062 [ 1] INFO  Unity: SetDirection:(58, 81, 0)
+2021-03-16 18:14:31,063 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:31,145 [ 1] INFO  Unity: SetDirection:(43, 90, 0)
+2021-03-16 18:14:31,146 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:31,228 [ 1] INFO  Unity: SetDirection:(27, 96, 0)
+2021-03-16 18:14:31,229 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:31,311 [ 1] INFO  Unity: SetDirection:(10, 100, 0)
+2021-03-16 18:14:31,312 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:31,393 [ 1] INFO  Unity: SetDirection:(-8, 100, 0)
+2021-03-16 18:14:31,393 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:31,492 [ 1] INFO  Unity: SetDirection:(-28, 96, 0)
+2021-03-16 18:14:31,493 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:31,575 [ 1] INFO  Unity: SetDirection:(-45, 89, 0)
+2021-03-16 18:14:31,576 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:31,626 [ 1] INFO  Unity: MoveBack
+2021-03-16 18:14:31,626 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:-300
+2021-03-16 18:14:31,675 [ 1] INFO  Unity: SetDirection:(-60, 80, 0)
+2021-03-16 18:14:31,676 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:-300
+2021-03-16 18:14:31,857 [ 1] INFO  Unity: SetDirection:(-73, 68, 0)
+2021-03-16 18:14:31,858 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:-300
+2021-03-16 18:14:32,338 [ 1] INFO  Unity: Stop
+2021-03-16 18:14:32,339 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:14:35,407 [ 1] INFO  Unity: SendTeamInviteRequest
+2021-03-16 18:14:57,941 [ 1] INFO  Unity: OnFriendList
+2021-03-16 18:14:57,946 [ 1] INFO  Unity: OnTeamInfo
+2021-03-16 18:16:31,701 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4759, 3217, 800) DIR:(100, 0, 0) SPD300
+2021-03-16 18:16:31,704 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:MoveFwd entity(1:pos:(4759,3217,800),dir:(100,0,0),spd:300
+
+2021-03-16 18:16:32,104 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4879, 3217, 800) DIR:(100, 0, 0) SPD0
+2021-03-16 18:16:32,108 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:Idle entity(1:pos:(4879,3217,800),dir:(100,0,0),spd:0
+
+2021-03-16 18:16:32,962 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4879, 3217, 800) DIR:(98, 18, 0) SPD0
+2021-03-16 18:16:32,965 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4879,3217,800),dir:(98,18,0),spd:0
+
+2021-03-16 18:16:33,031 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4884, 3218, 800) DIR:(98, 18, 0) SPD300
+2021-03-16 18:16:33,034 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:MoveFwd entity(1:pos:(4884,3218,800),dir:(98,18,0),spd:300
+
+2021-03-16 18:16:33,068 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4894, 3222, 800) DIR:(94, 35, 0) SPD300
+2021-03-16 18:16:33,070 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4894,3222,800),dir:(94,35,0),spd:300
+
+2021-03-16 18:16:33,147 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4913, 3231, 800) DIR:(86, 51, 0) SPD300
+2021-03-16 18:16:33,150 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4913,3231,800),dir:(86,51,0),spd:300
+
+2021-03-16 18:16:33,225 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4933, 3246, 800) DIR:(76, 65, 0) SPD300
+2021-03-16 18:16:33,229 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4933,3246,800),dir:(76,65,0),spd:300
+
+2021-03-16 18:16:33,315 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4952, 3262, 800) DIR:(63, 77, 0) SPD300
+2021-03-16 18:16:33,318 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4952,3262,800),dir:(63,77,0),spd:300
+
+2021-03-16 18:16:33,404 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4969, 3286, 800) DIR:(46, 89, 0) SPD300
+2021-03-16 18:16:33,408 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4969,3286,800),dir:(46,89,0),spd:300
+
+2021-03-16 18:16:33,489 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4979, 3307, 800) DIR:(30, 95, 0) SPD300
+2021-03-16 18:16:33,494 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4979,3307,800),dir:(30,95,0),spd:300
+
+2021-03-16 18:16:33,576 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4988, 3332, 800) DIR:(13, 99, 0) SPD300
+2021-03-16 18:16:33,578 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4988,3332,800),dir:(13,99,0),spd:300
+
+2021-03-16 18:16:33,684 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4992, 3357, 800) DIR:(-5, 100, 0) SPD300
+2021-03-16 18:16:33,686 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4992,3357,800),dir:(-5,100,0),spd:300
+
+2021-03-16 18:16:33,756 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4991, 3387, 800) DIR:(-25, 97, 0) SPD300
+2021-03-16 18:16:33,760 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4991,3387,800),dir:(-25,97,0),spd:300
+
+2021-03-16 18:16:33,851 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4984, 3417, 800) DIR:(-43, 90, 0) SPD300
+2021-03-16 18:16:33,853 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4984,3417,800),dir:(-43,90,0),spd:300
+
+2021-03-16 18:16:33,952 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4974, 3442, 800) DIR:(-43, 90, 0) SPD0
+2021-03-16 18:16:33,955 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:Idle entity(1:pos:(4974,3442,800),dir:(-43,90,0),spd:0
+
+2021-03-16 18:16:34,024 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4974, 3442, 800) DIR:(-59, 81, 0) SPD0
+2021-03-16 18:16:34,027 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4974,3442,800),dir:(-59,81,0),spd:0
+
+2021-03-16 18:16:34,286 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4974, 3442, 800) DIR:(-73, 68, 0) SPD0
+2021-03-16 18:16:34,291 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4974,3442,800),dir:(-73,68,0),spd:0
+
+2021-03-16 18:16:34,399 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4970, 3445, 800) DIR:(-84, 54, 0) SPD300
+2021-03-16 18:16:34,402 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:MoveFwd entity(1:pos:(4970,3445,800),dir:(-84,54,0),spd:300
+
+2021-03-16 18:16:34,425 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4962, 3451, 800) DIR:(-84, 54, 0) SPD300
+2021-03-16 18:16:34,430 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4962,3451,800),dir:(-84,54,0),spd:300
+
+2021-03-16 18:16:34,483 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4949, 3459, 800) DIR:(-92, 38, 0) SPD300
+2021-03-16 18:16:34,486 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4949,3459,800),dir:(-92,38,0),spd:300
+
+2021-03-16 18:16:34,588 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4924, 3468, 800) DIR:(-98, 21, 0) SPD300
+2021-03-16 18:16:34,596 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4924,3468,800),dir:(-98,21,0),spd:300
+
+2021-03-16 18:16:34,668 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4894, 3473, 800) DIR:(-100, 1, 0) SPD300
+2021-03-16 18:16:34,670 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4894,3473,800),dir:(-100,1,0),spd:300
+
+2021-03-16 18:16:34,741 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4869, 3472, 800) DIR:(-99, -17, 0) SPD300
+2021-03-16 18:16:34,745 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4869,3472,800),dir:(-99,-17,0),spd:300
+
+2021-03-16 18:16:34,846 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4839, 3465, 800) DIR:(-93, -37, 0) SPD300
+2021-03-16 18:16:34,849 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4839,3465,800),dir:(-93,-37,0),spd:300
+
+2021-03-16 18:16:34,966 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4806, 3449, 800) DIR:(-83, -55, 0) SPD300
+2021-03-16 18:16:34,969 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4806,3449,800),dir:(-83,-55,0),spd:300
+
+2021-03-16 18:16:35,040 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4786, 3434, 800) DIR:(-72, -69, 0) SPD300
+2021-03-16 18:16:35,044 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4786,3434,800),dir:(-72,-69,0),spd:300
+
+2021-03-16 18:16:35,143 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4767, 3418, 800) DIR:(-58, -81, 0) SPD300
+2021-03-16 18:16:35,147 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4767,3418,800),dir:(-58,-81,0),spd:300
+
+2021-03-16 18:16:35,333 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4732, 3369, 800) DIR:(-43, -90, 0) SPD300
+2021-03-16 18:16:35,335 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4732,3369,800),dir:(-43,-90,0),spd:300
+
+2021-03-16 18:16:35,606 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4702, 3294, 800) DIR:(-43, -90, 0) SPD0
+2021-03-16 18:16:35,611 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:Idle entity(1:pos:(4702,3294,800),dir:(-43,-90,0),spd:0
+
+2021-03-16 18:16:35,819 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4702, 3294, 800) DIR:(-26, -97, 0) SPD0
+2021-03-16 18:16:35,824 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4702,3294,800),dir:(-26,-97,0),spd:0
+
+2021-03-16 18:16:35,905 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4702, 3294, 800) DIR:(-8, -100, 0) SPD0
+2021-03-16 18:16:35,911 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4702,3294,800),dir:(-8,-100,0),spd:0
+
+2021-03-16 18:16:35,994 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4702, 3294, 800) DIR:(10, -100, 0) SPD0
+2021-03-16 18:16:35,998 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4702,3294,800),dir:(10,-100,0),spd:0
+
+2021-03-16 18:16:36,084 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4704, 3289, 800) DIR:(30, -95, 0) SPD300
+2021-03-16 18:16:36,119 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:MoveFwd entity(1:pos:(4704,3289,800),dir:(30,-95,0),spd:300
+
+2021-03-16 18:16:36,137 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4708, 3279, 800) DIR:(30, -95, 0) SPD300
+2021-03-16 18:16:36,140 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4708,3279,800),dir:(30,-95,0),spd:300
+
+2021-03-16 18:16:36,182 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4716, 3260, 800) DIR:(49, -87, 0) SPD300
+2021-03-16 18:16:36,184 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4716,3260,800),dir:(49,-87,0),spd:300
+
+2021-03-16 18:16:36,267 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4727, 3240, 800) DIR:(64, -77, 0) SPD300
+2021-03-16 18:16:36,270 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4727,3240,800),dir:(64,-77,0),spd:300
+
+2021-03-16 18:16:36,398 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4749, 3213, 800) DIR:(78, -63, 0) SPD300
+2021-03-16 18:16:36,400 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4749,3213,800),dir:(78,-63,0),spd:300
+
+2021-03-16 18:16:36,482 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4773, 3196, 800) DIR:(88, -47, 0) SPD300
+2021-03-16 18:16:36,485 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4773,3196,800),dir:(88,-47,0),spd:300
+
+2021-03-16 18:16:36,576 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4794, 3186, 800) DIR:(95, -31, 0) SPD300
+2021-03-16 18:16:36,579 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4794,3186,800),dir:(95,-31,0),spd:300
+
+2021-03-16 18:16:36,678 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4824, 3175, 800) DIR:(99, -11, 0) SPD300
+2021-03-16 18:16:36,681 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4824,3175,800),dir:(99,-11,0),spd:300
+
+2021-03-16 18:16:36,700 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4829, 3174, 800) DIR:(99, -11, 0) SPD0
+2021-03-16 18:16:36,703 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:Idle entity(1:pos:(4829,3174,800),dir:(99,-11,0),spd:0
+
+2021-03-16 18:16:36,754 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4829, 3174, 800) DIR:(100, 7, 0) SPD0
+2021-03-16 18:16:36,757 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4829,3174,800),dir:(100,7,0),spd:0
+
+2021-03-16 18:16:36,879 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4829, 3174, 800) DIR:(97, 26, 0) SPD0
+2021-03-16 18:16:36,881 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:None entity(1:pos:(4829,3174,800),dir:(97,26,0),spd:0
+
+2021-03-16 18:16:36,994 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4834, 3175, 800) DIR:(97, 26, 0) SPD300
+2021-03-16 18:16:36,998 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:MoveFwd entity(1:pos:(4834,3175,800),dir:(97,26,0),spd:300
+
+2021-03-16 18:16:37,284 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4914, 3191, 800) DIR:(97, 26, 0) SPD0
+2021-03-16 18:16:37,288 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:Idle entity(1:pos:(4914,3191,800),dir:(97,26,0),spd:0
+
+2021-03-16 18:16:37,417 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4909, 3190, 800) DIR:(97, 26, 0) SPD-300
+2021-03-16 18:16:37,421 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:MoveBack entity(1:pos:(4909,3190,800),dir:(97,26,0),spd:-300
+
+2021-03-16 18:16:38,026 [ 1] INFO  Unity: OnEntityChanged:ID:1 POS:(4734, 3155, 800) DIR:(97, 26, 0) SPD0
+2021-03-16 18:16:38,030 [ 1] INFO  Unity: MapEntityUpdateResponse:Entity1
+      [1]event:Idle entity(1:pos:(4734,3155,800),dir:(97,26,0),spd:0
+
+2021-03-16 18:16:55,340 [ 1] INFO  Unity: MoveBack
+2021-03-16 18:16:55,342 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:-300
+2021-03-16 18:16:55,828 [ 1] INFO  Unity: Stop
+2021-03-16 18:16:55,831 [ 1] INFO  Unity: MapEntityUpdateRequest:ID:2,POS:SkillBridge.Message.NVector3,DIR:SkillBridge.Message.NVector3,SPD:0
+2021-03-16 18:16:59,290 [ 1] INFO  Unity: SendTeamInviteRequest
+2021-03-16 18:17:02,963 [ 1] INFO  Unity: OnFriendList
+2021-03-16 18:17:02,987 [ 1] INFO  Unity: OnTeamInfo
+2021-03-16 18:18:50,910 [ 1] INFO  Unity: OnMapCharLeave:[1]
+2021-03-16 18:18:50,925 [ 1] INFO  Unity: RemoveCharacter:[1]
+2021-03-16 18:18:50,938 [ 1] INFO  Unity: RemoveCharacter:[2]
+2021-03-16 18:18:50,943 [ 1] INFO  Unity: OnFriendList
+2021-03-16 18:18:50,947 [ 1] INFO  Unity: Char_2_Warrior_zs1 isDestroy: entityID:1 POS:(4734, 3155, 800) DIR:(97, 26, 0) SPD:0
+2021-03-16 18:18:50,950 [ 1] INFO  Unity: Char_1_Wizard_fs1 isDestroy: entityID:2 POS:(5307, 3002, 804) DIR:(-73, 68, 0) SPD:0
+2021-03-16 18:18:52,724 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2021-03-16 18:18:52,726 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:182)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:177)
+

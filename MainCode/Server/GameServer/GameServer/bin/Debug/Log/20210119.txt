@@ -1,0 +1,37 @@
+
+2021-01-19 13:22:27,517 [1] [INFO ] [GameServer] ：Game Server Init
+2021-01-19 13:22:27,899 [1] [INFO ] [GameServer] ：DataManager -> DataManager()
+2021-01-19 13:22:27,909 [1] [INFO ] [GameServer] ：DataManager -> Load()
+2021-01-19 13:22:28,317 [1] [INFO ] [GameServer] ：New Map > ID:[1] Name:[奥特兰] 已加载!
+2021-01-19 13:22:28,321 [1] [INFO ] [GameServer] ：New Map > ID:[2] Name:[野外1] 已加载!
+2021-01-19 13:22:28,321 [1] [INFO ] [GameServer] ：New Map > ID:[3] Name:[野外2] 已加载!
+2021-01-19 13:22:28,322 [1] [INFO ] [GameServer] ：New Map > ID:[4] Name:[副本1] 已加载!
+2021-01-19 13:22:28,323 [1] [WARN ] [GameServer] ：Starting Listener...
+2021-01-19 13:22:28,385 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-19 13:22:28,385 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-19 13:22:28,385 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-19 13:22:28,385 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-19 13:22:28,385 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-19 13:22:28,385 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-19 13:22:28,386 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-19 13:22:28,386 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-19 13:22:28,477 [1] [WARN ] [GameServer] ：NetService Started
+2021-01-19 13:23:31,948 [3] [WARN ] [GameServer] ：Client[127.0.0.1:50572]] Connected
+2021-01-19 13:23:32,011 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:21
+2021-01-19 13:23:35,006 [5] [INFO ] [GameServer] ：Success
+2021-01-19 13:23:35,012 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-19 13:23:44,832 [13] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-19 13:23:44,836 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:3,Name:A1,Map:1
+2021-01-19 13:23:49,273 [13] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-19 13:24:03,210 [1] [INFO ] [GameServer] ：Game Server Exiting...
+2021-01-19 13:24:03,230 [1] [WARN ] [GameServer] ：Stop NetService...
+2021-01-19 13:24:03,231 [1] [WARN ] [GameServer] ：Stoping Message Handler...
+2021-01-19 13:24:03,238 [6] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-19 13:24:03,238 [5] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-19 13:24:03,238 [11] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-19 13:24:03,238 [10] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-19 13:24:03,238 [9] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-19 13:24:03,238 [8] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-19 13:24:03,239 [12] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-19 13:24:03,238 [7] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-19 13:24:03,340 [1] [INFO ] [GameServer] ：Game Server Exited

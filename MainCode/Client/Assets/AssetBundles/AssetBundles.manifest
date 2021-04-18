@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 2370562008
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: character/archer.asset
+      Dependencies:
+        Dependency_0: character/archer_mat.asset
+    Info_1:
+      Name: character/warrior.asset2
+      Dependencies: {}
+    Info_2:
+      Name: character/wizard.unity3d
+      Dependencies: {}
+    Info_3:
+      Name: character/archer_mat.asset
+      Dependencies: {}

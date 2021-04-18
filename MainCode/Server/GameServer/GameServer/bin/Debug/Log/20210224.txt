@@ -1,0 +1,50 @@
+
+2021-02-24 19:23:21,147 [1] [INFO ] [GameServer] ：Game Server Init
+2021-02-24 19:23:21,500 [1] [INFO ] [GameServer] ：DataManager -> DataManager()
+2021-02-24 19:23:21,512 [1] [INFO ] [GameServer] ：DataManager -> Load()
+2021-02-24 19:23:21,979 [1] [INFO ] [GameServer] ：New Map > ID:[1] Name:[布林镇] 已加载!
+2021-02-24 19:23:21,982 [1] [INFO ] [GameServer] ：New Map > ID:[2] Name:[落日森林] 已加载!
+2021-02-24 19:23:21,984 [1] [INFO ] [GameServer] ：New Map > ID:[3] Name:[落日森林] 已加载!
+2021-02-24 19:23:21,985 [1] [INFO ] [GameServer] ：New Map > ID:[4] Name:[落日空间] 已加载!
+2021-02-24 19:23:21,987 [1] [WARN ] [GameServer] ：Starting Listener...
+2021-02-24 19:23:22,074 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-02-24 19:23:22,074 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-02-24 19:23:22,074 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-02-24 19:23:22,074 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-02-24 19:23:22,074 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-02-24 19:23:22,074 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-02-24 19:23:22,074 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-02-24 19:23:22,074 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-02-24 19:23:22,112 [1] [WARN ] [GameServer] ：NetService Started
+2021-02-24 19:23:55,096 [3] [WARN ] [GameServer] ：Client[127.0.0.1:53319]] Connected
+2021-02-24 19:23:55,161 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-02-24 19:23:58,244 [5] [INFO ] [GameServer] ：Success
+2021-02-24 19:23:58,244 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-02-24 19:24:04,421 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-02-24 19:24:04,426 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:1,Name:fs1,Map:1
+2021-02-24 19:24:04,549 [6] [INFO ] [GameServer] ：AllEntities中添加了1个entity
+2021-02-24 19:24:04,550 [6] [INFO ] [GameServer] ：生成entityID为:[1]
+2021-02-24 19:24:04,551 [6] [INFO ] [GameServer] ： MapEntities:MapId[1]--Entities 目录已生成!
+2021-02-24 19:24:04,552 [6] [INFO ] [GameServer] ：EntityID:[1],At(3895, 5528, 805),已被添加至MapId[1]目录
+2021-02-24 19:24:04,561 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-02-24 19:24:04,562 [6] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-02-24 19:24:09,569 [3] [ERROR] [GameServer] ：角色当前位置信息已保存至数据库!
+2021-02-24 19:24:09,570 [3] [INFO ] [GameServer] ：AllEntities中删除:[1]
+2021-02-24 19:24:09,571 [3] [INFO ] [GameServer] ：MapEntities中删除:MapId[1]--EntityId[1]
+2021-02-24 19:24:09,571 [3] [INFO ] [GameServer] ：key of CharManager:[1] has Deleted!
+2021-02-24 19:24:09,574 [3] [INFO ] [GameServer] ：Send [1] Leave to test1
+2021-02-24 19:24:09,575 [3] [INFO ] [GameServer] ：MapCharacterLeaveResponse of [1] has sent!
+2021-02-24 19:24:09,576 [3] [INFO ] [GameServer] ：MapChars中删除:[1]
+2021-02-24 19:24:09,576 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2021-02-24 20:59:40,885 [1] [INFO ] [GameServer] ：Game Server Exiting...
+2021-02-24 20:59:40,901 [1] [WARN ] [GameServer] ：Stop NetService...
+2021-02-24 20:59:40,901 [1] [WARN ] [GameServer] ：Stoping Message Handler...
+2021-02-24 20:59:40,901 [8] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-02-24 20:59:40,901 [9] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-02-24 20:59:40,901 [10] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-02-24 20:59:40,901 [7] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-02-24 20:59:40,901 [11] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-02-24 20:59:40,901 [6] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-02-24 20:59:40,901 [5] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-02-24 20:59:40,901 [12] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-02-24 20:59:41,010 [1] [INFO ] [GameServer] ：Game Server Exited

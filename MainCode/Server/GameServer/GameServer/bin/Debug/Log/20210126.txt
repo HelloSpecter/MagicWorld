@@ -1,0 +1,90 @@
+
+2021-01-26 12:14:14,351 [1] [INFO ] [GameServer] ：Game Server Init
+2021-01-26 12:14:15,145 [1] [INFO ] [GameServer] ：DataManager -> DataManager()
+2021-01-26 12:14:15,165 [1] [INFO ] [GameServer] ：DataManager -> Load()
+2021-01-26 12:14:15,891 [1] [INFO ] [GameServer] ：New Map > ID:[1] Name:[奥特兰] 已加载!
+2021-01-26 12:14:15,896 [1] [INFO ] [GameServer] ：New Map > ID:[2] Name:[野外1] 已加载!
+2021-01-26 12:14:15,896 [1] [INFO ] [GameServer] ：New Map > ID:[3] Name:[野外2] 已加载!
+2021-01-26 12:14:15,897 [1] [INFO ] [GameServer] ：New Map > ID:[4] Name:[副本1] 已加载!
+2021-01-26 12:14:15,898 [1] [WARN ] [GameServer] ：Starting Listener...
+2021-01-26 12:14:16,023 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-26 12:14:16,023 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-26 12:14:16,023 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-26 12:14:16,023 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-26 12:14:16,023 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-26 12:14:16,023 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-26 12:14:16,024 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-26 12:14:16,024 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-26 12:14:16,136 [1] [WARN ] [GameServer] ：NetService Started
+2021-01-26 12:14:34,827 [3] [WARN ] [GameServer] ：Client[127.0.0.1:49240]] Connected
+2021-01-26 12:14:34,969 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-26 12:14:42,430 [5] [INFO ] [GameServer] ：Success
+2021-01-26 12:14:42,440 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-26 12:14:46,374 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-26 12:14:46,380 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:8,Name:asdf,Map:1
+2021-01-26 12:14:46,396 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-01-26 12:14:46,397 [6] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-26 12:15:09,488 [14] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-26 12:16:19,827 [14] [WARN ] [GameServer] ：Client[127.0.0.1:49268]] Connected
+2021-01-26 12:16:19,978 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-26 12:16:20,060 [5] [INFO ] [GameServer] ：Success
+2021-01-26 12:16:20,061 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-26 12:16:23,037 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-26 12:16:23,038 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:8,Name:asdf,Map:1
+2021-01-26 12:16:23,040 [5] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test2
+2021-01-26 12:16:23,041 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-26 12:16:23,043 [5] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-26 12:16:47,049 [14] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-26 12:20:57,127 [14] [WARN ] [GameServer] ：Client[127.0.0.1:49276]] Connected
+2021-01-26 12:20:57,281 [14] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-26 12:20:57,357 [5] [INFO ] [GameServer] ：Success
+2021-01-26 12:20:57,368 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-26 12:20:59,224 [21] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-26 12:20:59,225 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:8,Name:asdf,Map:1
+2021-01-26 12:20:59,226 [5] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test2
+2021-01-26 12:20:59,227 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-26 12:20:59,228 [5] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-26 12:21:19,057 [21] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-26 12:22:35,059 [23] [WARN ] [GameServer] ：Client[127.0.0.1:49280]] Connected
+2021-01-26 12:22:35,203 [23] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-26 12:22:35,278 [5] [INFO ] [GameServer] ：Success
+2021-01-26 12:22:35,280 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-26 12:22:38,138 [26] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-26 12:22:38,139 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:4,Name:asd,Map:1
+2021-01-26 12:22:38,141 [5] [INFO ] [GameServer] ：asd Message of Enter Map: [1] has already sent to test2
+2021-01-26 12:22:38,141 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is2
+2021-01-26 12:22:38,142 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-26 12:22:59,354 [26] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-26 13:28:58,795 [26] [WARN ] [GameServer] ：Client[127.0.0.1:49493]] Connected
+2021-01-26 13:28:58,948 [26] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-26 13:28:59,030 [5] [INFO ] [GameServer] ：Success
+2021-01-26 13:28:59,031 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-26 13:29:02,128 [19] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-26 13:29:02,129 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:8,Name:asdf,Map:1
+2021-01-26 13:29:02,130 [5] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test2
+2021-01-26 13:29:02,133 [5] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test1
+2021-01-26 13:29:02,133 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is3
+2021-01-26 13:29:02,134 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-26 13:30:07,927 [19] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-26 13:37:56,195 [16] [WARN ] [GameServer] ：Client[127.0.0.1:50142]] Connected
+2021-01-26 13:37:56,345 [16] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-26 13:37:56,430 [5] [INFO ] [GameServer] ：Success
+2021-01-26 13:37:56,440 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-26 13:37:58,238 [16] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-26 13:37:58,240 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:8,Name:asdf,Map:1
+2021-01-26 13:37:58,241 [5] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test2
+2021-01-26 13:37:58,242 [5] [INFO ] [GameServer] ：asdf Message of Enter Map: [1] has already sent to test1
+2021-01-26 13:37:58,243 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is3
+2021-01-26 13:37:58,244 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-26 13:38:18,549 [16] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-26 13:38:42,801 [16] [WARN ] [GameServer] ：Client[127.0.0.1:50149]] Connected
+2021-01-26 13:38:42,958 [16] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-26 13:38:43,035 [5] [INFO ] [GameServer] ：Success
+2021-01-26 13:38:43,047 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-26 13:38:45,578 [16] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-26 13:38:45,579 [5] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:4,Name:asd,Map:1
+2021-01-26 13:38:45,582 [5] [INFO ] [GameServer] ：asd Message of Enter Map: [1] has already sent to test2
+2021-01-26 13:38:45,583 [5] [INFO ] [GameServer] ：asd Message of Enter Map: [1] has already sent to test1
+2021-01-26 13:38:45,584 [5] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is3
+2021-01-26 13:38:45,585 [5] [ERROR] [GameServer] ：当前MapChars Num is2
+2021-01-26 13:39:04,843 [16] [WARN ] [GameServer] ：Client[] Disconnected

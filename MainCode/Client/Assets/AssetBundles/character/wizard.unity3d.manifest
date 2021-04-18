@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 1408897445
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c83d4ccd481516ffdff0d88ac2ced39e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9206d35f5bd46dec19632c4406531ea2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 15d5a5f23ecd1484284a40c74cff2548, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b65355fdf7d795544a8947e8a50768e9, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Resources/Character/Wizard.prefab
+Dependencies: []

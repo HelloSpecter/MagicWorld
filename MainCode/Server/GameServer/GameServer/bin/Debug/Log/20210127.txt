@@ -1,0 +1,38 @@
+
+2021-01-27 15:54:15,367 [1] [INFO ] [GameServer] ：Game Server Init
+2021-01-27 15:54:15,738 [1] [INFO ] [GameServer] ：DataManager -> DataManager()
+2021-01-27 15:54:15,750 [1] [INFO ] [GameServer] ：DataManager -> Load()
+2021-01-27 15:54:16,118 [1] [INFO ] [GameServer] ：New Map > ID:[1] Name:[奥特兰] 已加载!
+2021-01-27 15:54:16,121 [1] [INFO ] [GameServer] ：New Map > ID:[2] Name:[野外1] 已加载!
+2021-01-27 15:54:16,122 [1] [INFO ] [GameServer] ：New Map > ID:[3] Name:[野外2] 已加载!
+2021-01-27 15:54:16,122 [1] [INFO ] [GameServer] ：New Map > ID:[4] Name:[副本1] 已加载!
+2021-01-27 15:54:16,123 [1] [WARN ] [GameServer] ：Starting Listener...
+2021-01-27 15:54:16,178 [6] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-27 15:54:16,183 [8] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-27 15:54:16,183 [10] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-27 15:54:16,183 [11] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-27 15:54:16,183 [7] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-27 15:54:16,183 [9] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-27 15:54:16,183 [12] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-27 15:54:16,183 [5] [WARN ] [GameServer] ：MessageDistribute thread start
+2021-01-27 15:54:16,277 [1] [WARN ] [GameServer] ：NetService Started
+2021-01-27 15:54:23,691 [3] [WARN ] [GameServer] ：Client[127.0.0.1:51803]] Connected
+2021-01-27 15:54:23,735 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:20
+2021-01-27 15:54:26,882 [5] [INFO ] [GameServer] ：Success
+2021-01-27 15:54:26,883 [5] [INFO ] [GameServer] ：响应数据已发送
+2021-01-27 15:54:33,307 [3] [WARN ] [GameServer] ：Client[] DataReceived Len:10
+2021-01-27 15:54:33,312 [6] [INFO ] [GameServer] ：UserGameEnterRequest: characterID:4,Name:asd,Map:1
+2021-01-27 15:54:33,319 [6] [ERROR] [GameServer] ：当前Response.mapCharEnter.Chars Num is1
+2021-01-27 15:54:33,321 [6] [ERROR] [GameServer] ：当前MapChars Num is1
+2021-01-27 15:55:24,281 [3] [WARN ] [GameServer] ：Client[] Disconnected
+2021-01-27 15:55:29,078 [1] [INFO ] [GameServer] ：Game Server Exiting...
+2021-01-27 15:55:29,171 [1] [WARN ] [GameServer] ：Stop NetService...
+2021-01-27 15:55:29,171 [1] [WARN ] [GameServer] ：Stoping Message Handler...
+2021-01-27 15:55:29,187 [6] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-27 15:55:29,187 [8] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-27 15:55:29,187 [12] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-27 15:55:29,187 [9] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-27 15:55:29,187 [7] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-27 15:55:29,187 [10] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-27 15:55:29,187 [11] [WARN ] [GameServer] ：MessageDistribute thread end
+2021-01-27 15:55:29,187 [5] [WARN ] [GameServer] ：MessageDistribute thread end
