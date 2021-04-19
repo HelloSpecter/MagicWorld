@@ -1,8 +1,0 @@
-
-2021-01-02 13:26:03,427 [1] [INFO ] [GameServer] £ºGame Server Init
-2021-01-02 13:26:21,163 [1] [INFO ] [GameServer] £ºGame Server Exiting...
-2021-01-02 13:26:21,221 [1] [INFO ] [GameServer] £ºGame Server Exited
-2021-01-02 18:20:51,787 [1] [INFO ] [GameServer] £ºGame Server Init
-2021-01-02 18:21:33,763 [1] [INFO ] [GameServer] £ºGame Server Exiting...
-2021-01-02 18:21:33,812 [1] [INFO ] [GameServer] £ºGame Server Exited
-2021-01-02 18:26:43,392 [1] [INFO ] [GameServer] £ºGame Server Init
