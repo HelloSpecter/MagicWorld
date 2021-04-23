@@ -1,6 +1,9 @@
 # MagicWorld
 MagicWorldDemo
 
+##Test
+<https://pan.baidu.com/play/video#/video?path=%2F_A%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%2FP2%E3%80%90%E5%95%86%E4%B8%9A%E7%BA%A7MMORPG%E5%A4%A7%E5%9E%8B%E7%BD%91%E6%B8%B8%E3%80%91Unity%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%2F01.%E8%A7%82%E7%9C%8B%E6%95%99%E5%AD%A6%2F%E5%A4%A7%E9%BB%84%E8%9C%82%E4%BD%BF%E7%94%A8%E6%95%99%E5%AD%A6.mp4&t=-1>
+
 ## 笔记（登录、注册、角色选择、角色进入游戏、角色控制）
 
 ![1](https://github.com/HelloSpecter/MagicWorld/blob/main/%E7%AC%94%E8%AE%B0/%E8%A7%92%E8%89%B2%E7%99%BB%E5%BD%95%E4%B8%8E%E9%80%89%E6%8B%A9%E9%80%BB%E8%BE%91%E5%9B%BE.png)
