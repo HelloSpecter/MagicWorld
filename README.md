@@ -1,8 +1,9 @@
 # MagicWorld
 MagicWorldDemo
 
-##Test
-链接: <https://pan.baidu.com/s/1_RDO3ECtDv0j_8x4IZiILA> 提取码: 9sm2
+##Test  
+链接: <https://pan.baidu.com/s/13fDP2ibUKrWYSFkLqlwtjg> 
+提取码: 1234
 ## 笔记（登录、注册、角色选择、角色进入游戏、角色控制）
 
 ![1](https://github.com/HelloSpecter/MagicWorld/blob/main/%E7%AC%94%E8%AE%B0/%E8%A7%92%E8%89%B2%E7%99%BB%E5%BD%95%E4%B8%8E%E9%80%89%E6%8B%A9%E9%80%BB%E8%BE%91%E5%9B%BE.png)
